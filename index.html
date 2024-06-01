@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerodha Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-blue-600">ZERODHA</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Signup</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">About</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Products</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Pricing</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-10">
+        <section class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-800">Invest in everything</h2>
+            <p class="text-gray-600 mt-4">Online platform to invest in stocks, derivatives, mutual funds, and more.</p>
+            <button onclick="window.location.href='https://signup.zerodha.com/'" class="bg-blue-600 text-white px-6 py-2 mt-4 rounded">Sign up</button>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800">Market Indices</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-bold text-gray-800">Nifty 50</h3>
+                    <p class="text-gray-600 mt-2" id="nifty-50">Loading...</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-bold text-gray-800">S&P 500</h3>
+                    <p class="text-gray-600 mt-2" id="sp-500">Loading...</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-bold text-gray-800">IBM</h3>
+                    <p class="text-gray-600 mt-2" id="ibm">Loading...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-bold text-gray-800">Dashboard</h3>
+                <p class="text-gray-600 mt-2">Manage your investments with a comprehensive dashboard.</p>
+                <button onclick="window.location.href='https://console.zerodha.com/'" class="bg-blue-600 text-white px-6 py-2 mt-4 rounded">Go to Dashboard</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-bold text-gray-800">Stocks</h3>
+                <p class="text-gray-600 mt-2">Invest in stocks and track their performance.</p>
+                <button onclick="window.location.href='https://stocks.zerodha.com/'" class="bg-blue-600 text-white px-6 py-2 mt-4 rounded">Invest Now</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-bold text-gray-800">Mutual Funds</h3>
+                <p class="text-gray-600 mt-2">Invest in mutual funds and diversify your portfolio.</p>
+                <button onclick="window.location.href='https://coin.zerodha.com/'" class="bg-blue-600 text-white px-6 py-2 mt-4 rounded">Coin</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-bold text-gray-800">Gold</h3>
+                <p class="text-gray-600 mt-2">Invest in gold and secure your future.</p>
+                <button class="bg-blue-600 text-white px-6 py-2 mt-4 rounded">Invest in Gold</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div>
+                <p>&copy; 2024 Zerodha. All rights reserved.</p>
+            </div>
+            <div>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-300">LinkedIn</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Twitter</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Instagram</a></li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-gray-300">Company</a>
+                        <ul class="absolute hidden bg-gray-800 text-white py-2 px-4 right-0">
+                            <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Careers</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Demat Account</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="mailto:support@zerodha.com" class="hover:text-gray-300">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
